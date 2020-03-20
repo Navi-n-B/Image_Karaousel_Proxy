@@ -14,13 +14,13 @@ let imageSchema = mongoose.Schema({
   description: String
 });
 
-let carousel = mongoose.model('Listing', listingSchema);
+let carousel = mongoose.model('Stay', staySchema);
 
-let getImage = (listingNumber, callback) => {
-  Listing.
-    find({listingNumber}).
-    exec(callback)
+let getImage = (stayNumber, callback) => {
+  Stay.
+    find({stayNumber})
+    .exec(callback)
 }
 
-module.exports.getListing = getListing;
-module.exports.Listing = Listing;
+module.exports.getStay = getStay;
+module.exports.Stay = Stay;
