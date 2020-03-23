@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const {getItem} = require('../database/data.js');
+const getCarousel = require('../database/data.js');
 const port = 3005; // Childish Gambino
 
 let gallery = 'hrr44-navi-photos';
